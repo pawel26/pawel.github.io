@@ -8,7 +8,6 @@ fetch("https://api.github.com/users/pawel26/repos?sort=created&direction=asc")
   .then((res) => {
     const container = document.querySelector('.projects-grid--js');
     for (let repo of res) {
-      console.log(repo)
        const {description, homepage, html_url, name, fork} = repo;
 
        const template = ` <article class="project">
