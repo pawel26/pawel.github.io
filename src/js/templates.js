@@ -1,11 +1,8 @@
-import "../scss/main.scss";
-
-
-function render_list_item(value) {
+export function render_list_item(value) {
     return `<li class="skills-list__item">${value}</li>`;
-}
+};
 
-function render_project(name, description, homepage, html_url){
+export function render_project(name, description, homepage, html_url){
     const template = ` <article class="project">
        <div class="project__window">
          <span class="project__circle"></span>
@@ -51,6 +48,4 @@ function render_project(name, description, homepage, html_url){
        </div>
      </article>`;
     return template;
-}
-
-export default render_list_item
+};
